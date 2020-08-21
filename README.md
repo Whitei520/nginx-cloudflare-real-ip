@@ -1,5 +1,6 @@
 # nginx-cloudflare-real-ip-aapanel
 
+![Example](https://i.imgur.com/9FEGmr4.png)
 ### Forked from https://virtubox.github.io/nginx-cloudflare-real-ip/ and edited to support aaPanel https://aapanel.com/.
 
 Configure Nginx to restore Visitors real IP under Cloudflare CDN

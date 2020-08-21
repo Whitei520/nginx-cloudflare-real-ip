@@ -1,11 +1,12 @@
-# nginx-cloudflare-real-ip
+# nginx-cloudflare-real-ip-aapanel
+
+### Forked from https://virtubox.github.io/nginx-cloudflare-real-ip/ and edited to support aaPanel https://aapanel.com/.
 
 Configure Nginx to restore Visitors real IP under Cloudflare CDN
 
 ## Features
 
-* Get Cloudflare IPv4 + IPv6 list and create nginx configuration to restore visitors real IP in `/etc/nginx/conf.d/cloudflare.conf`
-* Whitelist Cloudflare IPs on port 80 & 443 with UFW (optional)
+* Get Cloudflare IPv4 + IPv6 list and create nginx configuration to restore visitors real IP in `/www/server/panel/vhost/nginx/cloudflare.conf`
 
 ## Requirements
 
@@ -23,16 +24,7 @@ If the previous command return nothing, http_realip_module isn't available
 
 ## Usage
 
-Nginx configuration only
+Setup the script to run daily via the cron panel.
+Example below:
 
-```bash
-bash <(wget -O - vtb.cx/nginx-cloudflare || curl -sL vtb.cx/nginx-cloudflare)
-```
-
-Nginx configuration + UFW configuration
-
-```bash
-bash <(wget -O - vtb.cx/nginx-cloudflare || curl -sL vtb.cx/nginx-cloudflare) --ufw
-```
-
-Published & maintained by [VirtuBox](https://virtubox.net)
+![Example](https://i.imgur.com/aGVF2d8.png)
